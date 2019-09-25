@@ -9,10 +9,10 @@ import org.springframework.validation.ObjectError;
  *
  * @author : Uwe Sauerbrei
  */
-public class ToDoValidationErrorBuilder {
+public class ToDoJDBCValidationErrorBuilder {
 
-    public static ToDoValidationError fromBindingErrors(Errors errors) {
-        ToDoValidationError error = new ToDoValidationError("Validation failed. " + errors.getErrorCount() + " error(s)!");
+    public static ToDoJDBCValidationError fromBindingErrors(Errors errors) {
+        ToDoJDBCValidationError error = new ToDoJDBCValidationError("Validation failed. " + errors.getErrorCount() + " error(s)!");
         for (ObjectError objectError : errors.getAllErrors()) {
             error.addValidationError(objectError.getDefaultMessage());
         }

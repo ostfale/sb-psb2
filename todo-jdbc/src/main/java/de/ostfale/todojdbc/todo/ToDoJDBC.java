@@ -11,7 +11,7 @@ import java.util.UUID;
  *
  * @author : Uwe Sauerbrei
  */
-public class ToDo {
+public class ToDoJDBC {
 
     @NotNull
     private String id;
@@ -24,14 +24,14 @@ public class ToDo {
     private LocalDateTime modified;
     private boolean completed;
 
-    public ToDo() {
+    public ToDoJDBC() {
         LocalDateTime dateTime = LocalDateTime.now();
         this.id = UUID.randomUUID().toString();
         created = dateTime;
         modified = dateTime;
     }
 
-    public ToDo(@NotNull @NotBlank String description) {
+    public ToDoJDBC(@NotNull @NotBlank String description) {
         this();
         this.description = description;
     }

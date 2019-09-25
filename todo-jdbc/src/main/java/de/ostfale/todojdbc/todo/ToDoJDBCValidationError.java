@@ -12,14 +12,14 @@ import java.util.List;
  *
  * @author : Uwe Sauerbrei
  */
-public class ToDoValidationError {
+public class ToDoJDBCValidationError {
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     private List<String> errors = new ArrayList<>();
 
     private final String errorMessage;
 
-    public ToDoValidationError(String errorMessage) {
+    public ToDoJDBCValidationError(String errorMessage) {
         this.errorMessage = errorMessage;
     }
 
