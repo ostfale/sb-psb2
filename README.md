@@ -9,3 +9,10 @@ Code to the book Pro Spring Boot 2
 + curl -s http://localhost:8080/api/todo/{id}  (set ToDo completed)
 + curl -i -X POST -H "Content-Type: application/json" -d '{
 "description":""}' http://localhost:8080/api/todo (test validation)
+
+
+## Module Spring Data JDBC
+
+### H2 DB
+Using default settings
+jdbc:h2:mem:testdb

@@ -1,5 +1,7 @@
 package de.ostfale.todojdbc.todo;
 
+import org.springframework.data.relational.core.mapping.Table;
+
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
@@ -11,6 +13,7 @@ import java.util.UUID;
  *
  * @author : Uwe Sauerbrei
  */
+@Table("todo")
 public class ToDoJDBC {
 
     @NotNull
